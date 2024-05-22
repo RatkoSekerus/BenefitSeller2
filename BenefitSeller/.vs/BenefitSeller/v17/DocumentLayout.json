@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\seker\\vega\\BenefitSeller\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\viewmodels\\transactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\viewmodels\\transactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\managers\\transactionsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\managers\\transactionsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\repositories\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\repositories\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\contracts\\itransactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\contracts\\itransactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\contracts\\itransactionsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\contracts\\itransactionsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\subscriptiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\subscriptiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\subscriptionplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\subscriptionplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\statusoftransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\statusoftransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\merchantcategorygroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\merchantcategorygroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\merchantcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\merchantcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITransactionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Contracts\\ITransactionsRepository.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Contracts\\ITransactionsRepository.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Contracts\\ITransactionsRepository.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Contracts\\ITransactionsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:53:59.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\Transaction.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\Transaction.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA1wA0AAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:39.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionsManager.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Managers\\TransactionsManager.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Managers\\TransactionsManager.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Managers\\TransactionsManager.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Managers\\TransactionsManager.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADgvxYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:39:53.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Repositories\\TransactionsRepository.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Repositories\\TransactionsRepository.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Repositories\\TransactionsRepository.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Repositories\\TransactionsRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADgvxMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:48:55.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Merchant.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\Merchant.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\Merchant.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\Merchant.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\Merchant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:02.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\ViewModels\\TransactionViewModel.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\ViewModels\\TransactionViewModel.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\ViewModels\\TransactionViewModel.cs",
+              "RelativeToolTip": "BenefitSeller.API\\ViewModels\\TransactionViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T23:04:54.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:02:36.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITransactionsManager.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Contracts\\ITransactionsManager.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Contracts\\ITransactionsManager.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Contracts\\ITransactionsManager.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Contracts\\ITransactionsManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:53:13.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserCard.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\UserCard.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\UserCard.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\UserCard.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\UserCard.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:42:16.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\User.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\User.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAzwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:41:06.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SubscriptionType.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\SubscriptionType.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\SubscriptionType.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\SubscriptionType.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\SubscriptionType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:37.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubscriptionPlan.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\SubscriptionPlan.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\SubscriptionPlan.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\SubscriptionPlan.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\SubscriptionPlan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:34.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StatusOfTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\StatusOfTransaction.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\StatusOfTransaction.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\StatusOfTransaction.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\StatusOfTransaction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:33.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MerchantCategoryGroup.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\MerchantCategoryGroup.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\MerchantCategoryGroup.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\MerchantCategoryGroup.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\MerchantCategoryGroup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:29.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MerchantCategory.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\MerchantCategory.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\MerchantCategory.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\MerchantCategory.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\MerchantCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:40:16.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\Company.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\Company.cs",
+              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Models\\Company.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\Company.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:37:54.156Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
