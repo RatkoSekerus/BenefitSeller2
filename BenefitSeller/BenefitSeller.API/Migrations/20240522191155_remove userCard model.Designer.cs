@@ -4,6 +4,7 @@ using BenefitSeller.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BenefitSeller.API.Migrations
 {
     [DbContext(typeof(BenefitSellerDbContext))]
-    partial class BenefitSellerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240522191155_remove userCard model")]
+    partial class removeuserCardmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,17 +42,17 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("562f495d-f7eb-4be9-a1b1-fe73ec12ec9b"),
+                            Id = new Guid("ce7d8146-02e5-4ffe-bf7c-0013643b30e2"),
                             Name = "StandardCompany"
                         },
                         new
                         {
-                            Id = new Guid("a2083c81-c5b6-4825-8ca6-13f67a7ce3ec"),
+                            Id = new Guid("2869f08c-a8e0-4d67-a153-76f232a154b5"),
                             Name = "PremiumCompany"
                         },
                         new
                         {
-                            Id = new Guid("75b7c3d7-e43c-4048-90ca-72cedd59b10c"),
+                            Id = new Guid("e0506eb7-4a85-4dc4-8705-92ce99688440"),
                             Name = "PlatinumCompany"
                         });
                 });
@@ -82,46 +85,46 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("668dc37d-4fa9-41e4-a49d-c2c72b9b8821"),
+                            Id = new Guid("fdfd4b01-7d58-4d37-bda5-dfd68b9c3f24"),
                             DiscountPercentage = 12.5,
                             Earnings = 0.0,
-                            MerchantCategoryId = new Guid("058cf432-c25d-4f46-9607-226ff0a51bf6"),
+                            MerchantCategoryId = new Guid("da072d76-a96d-413d-b12c-33be3deb6952"),
                             Name = "Merchant1"
                         },
                         new
                         {
-                            Id = new Guid("08279196-ff85-4712-81ac-714f435b3dbf"),
+                            Id = new Guid("03712d7e-beac-43a7-a446-e7d555c0bcda"),
                             DiscountPercentage = 7.5,
                             Earnings = 0.0,
-                            MerchantCategoryId = new Guid("b474b3ee-cbaa-4217-b544-278cb9ad6da2"),
+                            MerchantCategoryId = new Guid("9eaa49a7-8e46-4ee9-a4cd-5e7799d1baf0"),
                             Name = "Merchant2"
                         },
                         new
                         {
-                            Id = new Guid("6947fefc-5c7b-49bd-aa1a-39c5dece97e9"),
+                            Id = new Guid("43134a0b-61e5-4e89-8c32-dcd29aa11f69"),
                             Earnings = 0.0,
-                            MerchantCategoryId = new Guid("e797b656-11b6-4cd1-9324-c84dba20a0fa"),
+                            MerchantCategoryId = new Guid("f469a0d6-ae97-4621-984c-f79682bc452e"),
                             Name = "Merchant3"
                         },
                         new
                         {
-                            Id = new Guid("726b887c-2522-4d8a-b32b-cb0cd520a429"),
+                            Id = new Guid("9c9880b6-9750-42d6-8ace-483728fb3f4c"),
                             Earnings = 0.0,
-                            MerchantCategoryId = new Guid("b6dba513-44ab-4212-a3d0-eebd84ed303e"),
+                            MerchantCategoryId = new Guid("501940da-a849-46f0-a260-409f9511392d"),
                             Name = "Merchant4"
                         },
                         new
                         {
-                            Id = new Guid("e7becafc-e057-4981-8f07-4023ed72bca5"),
+                            Id = new Guid("93d43fb0-19e4-4a53-a538-271dab787d30"),
                             Earnings = 0.0,
-                            MerchantCategoryId = new Guid("4d188449-589d-4662-85b1-86e3ca67a3b9"),
+                            MerchantCategoryId = new Guid("ec3eed74-f9ee-49d5-bd76-d9f129ad8639"),
                             Name = "Merchant5"
                         },
                         new
                         {
-                            Id = new Guid("f07f87c0-0e2b-45e4-8bce-5068c876a42b"),
+                            Id = new Guid("a4a4bb29-af9e-4b1c-99be-2f4b6ef05225"),
                             Earnings = 0.0,
-                            MerchantCategoryId = new Guid("43e123e2-3ba0-47d9-b148-5c5c0d5313b0"),
+                            MerchantCategoryId = new Guid("58b517eb-5d34-4789-bb42-ec40a366b8e9"),
                             Name = "Merchant6"
                         });
                 });
@@ -148,86 +151,86 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("058cf432-c25d-4f46-9607-226ff0a51bf6"),
-                            MerchantCategoryGroupId = new Guid("5b030f72-8e8a-4f94-bcfb-fed58c312f2b"),
+                            Id = new Guid("da072d76-a96d-413d-b12c-33be3deb6952"),
+                            MerchantCategoryGroupId = new Guid("b8068328-48b6-47c7-a57a-bc346b7e09ae"),
                             Name = "Restaurants"
                         },
                         new
                         {
-                            Id = new Guid("b474b3ee-cbaa-4217-b544-278cb9ad6da2"),
-                            MerchantCategoryGroupId = new Guid("5b030f72-8e8a-4f94-bcfb-fed58c312f2b"),
+                            Id = new Guid("9eaa49a7-8e46-4ee9-a4cd-5e7799d1baf0"),
+                            MerchantCategoryGroupId = new Guid("b8068328-48b6-47c7-a57a-bc346b7e09ae"),
                             Name = "Coffee shops"
                         },
                         new
                         {
-                            Id = new Guid("e797b656-11b6-4cd1-9324-c84dba20a0fa"),
-                            MerchantCategoryGroupId = new Guid("0dfb8498-ef19-46fd-bd74-e63a42130fa7"),
+                            Id = new Guid("f469a0d6-ae97-4621-984c-f79682bc452e"),
+                            MerchantCategoryGroupId = new Guid("a4ec0845-6db0-4b6b-a346-6ecc3f2c504e"),
                             Name = "Fitness"
                         },
                         new
                         {
-                            Id = new Guid("b6dba513-44ab-4212-a3d0-eebd84ed303e"),
-                            MerchantCategoryGroupId = new Guid("0dfb8498-ef19-46fd-bd74-e63a42130fa7"),
+                            Id = new Guid("501940da-a849-46f0-a260-409f9511392d"),
+                            MerchantCategoryGroupId = new Guid("a4ec0845-6db0-4b6b-a346-6ecc3f2c504e"),
                             Name = "Sauna"
                         },
                         new
                         {
-                            Id = new Guid("4d188449-589d-4662-85b1-86e3ca67a3b9"),
-                            MerchantCategoryGroupId = new Guid("7c3f5f20-35ae-4699-8637-014b774acc76"),
+                            Id = new Guid("ec3eed74-f9ee-49d5-bd76-d9f129ad8639"),
+                            MerchantCategoryGroupId = new Guid("f61eb6bf-11b1-4954-b3bd-aa57a88aa83b"),
                             Name = "Courses"
                         },
                         new
                         {
-                            Id = new Guid("43e123e2-3ba0-47d9-b148-5c5c0d5313b0"),
-                            MerchantCategoryGroupId = new Guid("7c3f5f20-35ae-4699-8637-014b774acc76"),
+                            Id = new Guid("58b517eb-5d34-4789-bb42-ec40a366b8e9"),
+                            MerchantCategoryGroupId = new Guid("f61eb6bf-11b1-4954-b3bd-aa57a88aa83b"),
                             Name = "Books"
                         },
                         new
                         {
-                            Id = new Guid("de9ffa95-2f0e-450d-bd36-a6e0da6c7ef7"),
-                            MerchantCategoryGroupId = new Guid("7c3f5f20-35ae-4699-8637-014b774acc76"),
+                            Id = new Guid("ca66a2c3-7ff4-4ff0-9876-67be7e33f691"),
+                            MerchantCategoryGroupId = new Guid("f61eb6bf-11b1-4954-b3bd-aa57a88aa83b"),
                             Name = "Conferences"
                         },
                         new
                         {
-                            Id = new Guid("bdee9bc0-835e-457b-bd50-4682593dbf4b"),
-                            MerchantCategoryGroupId = new Guid("b16472ad-15bc-4678-85b2-99ff33e4d876"),
+                            Id = new Guid("91a1f401-dbf0-435c-9eed-4d0e9debb14c"),
+                            MerchantCategoryGroupId = new Guid("169bcab1-0c3c-42e8-a2ce-06d57da9213a"),
                             Name = "Cinema"
                         },
                         new
                         {
-                            Id = new Guid("e998394e-ce58-4c63-9c80-66058f996794"),
-                            MerchantCategoryGroupId = new Guid("b16472ad-15bc-4678-85b2-99ff33e4d876"),
+                            Id = new Guid("591fb82e-b2b1-42ee-98e7-8e84b9cc90fc"),
+                            MerchantCategoryGroupId = new Guid("169bcab1-0c3c-42e8-a2ce-06d57da9213a"),
                             Name = "Museum"
                         },
                         new
                         {
-                            Id = new Guid("ec671a57-d222-440f-867d-f34c8004eb3d"),
-                            MerchantCategoryGroupId = new Guid("b16472ad-15bc-4678-85b2-99ff33e4d876"),
+                            Id = new Guid("f6f0671f-4b98-43b1-bba3-b5b650826e0a"),
+                            MerchantCategoryGroupId = new Guid("169bcab1-0c3c-42e8-a2ce-06d57da9213a"),
                             Name = "Theater"
                         },
                         new
                         {
-                            Id = new Guid("fa5c3fd4-9d4e-439c-9b4a-cf215175b334"),
-                            MerchantCategoryGroupId = new Guid("33ec85de-d419-470c-abfb-c46cdd7b788e"),
+                            Id = new Guid("c0f1215c-01d3-423b-88d7-4b469f205648"),
+                            MerchantCategoryGroupId = new Guid("b3999514-210f-4942-895c-d760d9423542"),
                             Name = "Fuel"
                         },
                         new
                         {
-                            Id = new Guid("f0fdbbba-97b3-4fb2-9f05-477aa973bdd7"),
-                            MerchantCategoryGroupId = new Guid("33ec85de-d419-470c-abfb-c46cdd7b788e"),
+                            Id = new Guid("fb67e8ac-c34a-490e-84b3-b7368c5218e0"),
+                            MerchantCategoryGroupId = new Guid("b3999514-210f-4942-895c-d760d9423542"),
                             Name = "Plane tickets"
                         },
                         new
                         {
-                            Id = new Guid("fe657679-8cc5-4df4-80d9-90e98204e055"),
-                            MerchantCategoryGroupId = new Guid("33ec85de-d419-470c-abfb-c46cdd7b788e"),
+                            Id = new Guid("5c30bbb9-9148-4c7e-8ade-d083f24e5c39"),
+                            MerchantCategoryGroupId = new Guid("b3999514-210f-4942-895c-d760d9423542"),
                             Name = "Train or bus tickets"
                         },
                         new
                         {
-                            Id = new Guid("65c692b0-99f4-4d2b-9b88-db73bfb52517"),
-                            MerchantCategoryGroupId = new Guid("33ec85de-d419-470c-abfb-c46cdd7b788e"),
+                            Id = new Guid("3d3e67ce-2f96-4f73-8002-4f0b107f6b73"),
+                            MerchantCategoryGroupId = new Guid("b3999514-210f-4942-895c-d760d9423542"),
                             Name = "Taxi"
                         });
                 });
@@ -249,32 +252,32 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("5b030f72-8e8a-4f94-bcfb-fed58c312f2b"),
+                            Id = new Guid("b8068328-48b6-47c7-a57a-bc346b7e09ae"),
                             Name = "Food and drinks"
                         },
                         new
                         {
-                            Id = new Guid("0dfb8498-ef19-46fd-bd74-e63a42130fa7"),
+                            Id = new Guid("a4ec0845-6db0-4b6b-a346-6ecc3f2c504e"),
                             Name = "Recreation"
                         },
                         new
                         {
-                            Id = new Guid("7c3f5f20-35ae-4699-8637-014b774acc76"),
+                            Id = new Guid("f61eb6bf-11b1-4954-b3bd-aa57a88aa83b"),
                             Name = "Education"
                         },
                         new
                         {
-                            Id = new Guid("b16472ad-15bc-4678-85b2-99ff33e4d876"),
+                            Id = new Guid("169bcab1-0c3c-42e8-a2ce-06d57da9213a"),
                             Name = "Culture"
                         },
                         new
                         {
-                            Id = new Guid("33ec85de-d419-470c-abfb-c46cdd7b788e"),
+                            Id = new Guid("b3999514-210f-4942-895c-d760d9423542"),
                             Name = "Traveling"
                         },
                         new
                         {
-                            Id = new Guid("ad66e86b-69f0-48db-b95b-65f892f1ba08"),
+                            Id = new Guid("8981a714-dbb0-461c-b434-2e640811bf14"),
                             Name = "Shopping"
                         });
                 });
@@ -299,19 +302,19 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a208be69-33fa-4fd3-9df0-014c7cc21d05"),
+                            Id = new Guid("5373457e-862f-48f3-839a-31f539aa02c7"),
                             Name = "Standard",
                             SubscriptionType = 0
                         },
                         new
                         {
-                            Id = new Guid("87ee4d8e-8ed7-457a-bf1c-ff509e2d3d06"),
+                            Id = new Guid("7dee61e2-c5d6-4bc1-935b-34f99ab970f4"),
                             Name = "Premium",
                             SubscriptionType = 1
                         },
                         new
                         {
-                            Id = new Guid("dea5afbc-0bd3-4369-b5db-2a9b98bdceef"),
+                            Id = new Guid("6c3209c7-a1d5-4788-8607-50cec3b23c4f"),
                             Name = "Platinum",
                             SubscriptionType = 2
                         });
@@ -332,7 +335,7 @@ namespace BenefitSeller.API.Migrations
                     b.Property<DateTime>("TransactionDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2024, 5, 22, 23, 42, 0, 960, DateTimeKind.Local).AddTicks(4539));
+                        .HasDefaultValue(new DateTime(2024, 5, 22, 21, 11, 55, 32, DateTimeKind.Local).AddTicks(621));
 
                     b.Property<int>("TransactionStatus")
                         .ValueGeneratedOnAdd()
@@ -365,6 +368,10 @@ namespace BenefitSeller.API.Migrations
                     b.Property<Guid>("CompanyId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("SubscriptionPlanId")
                         .HasColumnType("uniqueidentifier");
 
@@ -383,26 +390,29 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("b66e8fec-a94f-4acc-9552-68f2e6eeb8d0"),
+                            Id = new Guid("f88e4ea7-f2bf-45dc-b70d-9abdf871f293"),
                             Balance = 100.0,
-                            CompanyId = new Guid("562f495d-f7eb-4be9-a1b1-fe73ec12ec9b"),
-                            SubscriptionPlanId = new Guid("a208be69-33fa-4fd3-9df0-014c7cc21d05"),
+                            CompanyId = new Guid("ce7d8146-02e5-4ffe-bf7c-0013643b30e2"),
+                            Password = "password",
+                            SubscriptionPlanId = new Guid("5373457e-862f-48f3-839a-31f539aa02c7"),
                             UserName = "StandardUser"
                         },
                         new
                         {
-                            Id = new Guid("5490a20c-e8f9-41aa-9606-2944813f0e31"),
+                            Id = new Guid("8e44050a-1330-445b-8d06-638334857d3c"),
                             Balance = 100.0,
-                            CompanyId = new Guid("a2083c81-c5b6-4825-8ca6-13f67a7ce3ec"),
-                            SubscriptionPlanId = new Guid("87ee4d8e-8ed7-457a-bf1c-ff509e2d3d06"),
+                            CompanyId = new Guid("2869f08c-a8e0-4d67-a153-76f232a154b5"),
+                            Password = "password",
+                            SubscriptionPlanId = new Guid("7dee61e2-c5d6-4bc1-935b-34f99ab970f4"),
                             UserName = "PremiumUser"
                         },
                         new
                         {
-                            Id = new Guid("9ca58ef1-a790-414d-9421-de6023758d02"),
+                            Id = new Guid("846b7416-7756-4f9e-9fa5-269d440cc29e"),
                             Balance = 100.0,
-                            CompanyId = new Guid("a2083c81-c5b6-4825-8ca6-13f67a7ce3ec"),
-                            SubscriptionPlanId = new Guid("dea5afbc-0bd3-4369-b5db-2a9b98bdceef"),
+                            CompanyId = new Guid("2869f08c-a8e0-4d67-a153-76f232a154b5"),
+                            Password = "password",
+                            SubscriptionPlanId = new Guid("6c3209c7-a1d5-4788-8607-50cec3b23c4f"),
                             UserName = "PlatinumUser"
                         });
                 });
@@ -424,38 +434,38 @@ namespace BenefitSeller.API.Migrations
                     b.HasData(
                         new
                         {
-                            CompaniesId = new Guid("562f495d-f7eb-4be9-a1b1-fe73ec12ec9b"),
-                            MerchantCategoryGroupsId = new Guid("5b030f72-8e8a-4f94-bcfb-fed58c312f2b")
+                            CompaniesId = new Guid("ce7d8146-02e5-4ffe-bf7c-0013643b30e2"),
+                            MerchantCategoryGroupsId = new Guid("b8068328-48b6-47c7-a57a-bc346b7e09ae")
                         },
                         new
                         {
-                            CompaniesId = new Guid("562f495d-f7eb-4be9-a1b1-fe73ec12ec9b"),
-                            MerchantCategoryGroupsId = new Guid("0dfb8498-ef19-46fd-bd74-e63a42130fa7")
+                            CompaniesId = new Guid("ce7d8146-02e5-4ffe-bf7c-0013643b30e2"),
+                            MerchantCategoryGroupsId = new Guid("a4ec0845-6db0-4b6b-a346-6ecc3f2c504e")
                         },
                         new
                         {
-                            CompaniesId = new Guid("a2083c81-c5b6-4825-8ca6-13f67a7ce3ec"),
-                            MerchantCategoryGroupsId = new Guid("7c3f5f20-35ae-4699-8637-014b774acc76")
+                            CompaniesId = new Guid("2869f08c-a8e0-4d67-a153-76f232a154b5"),
+                            MerchantCategoryGroupsId = new Guid("f61eb6bf-11b1-4954-b3bd-aa57a88aa83b")
                         },
                         new
                         {
-                            CompaniesId = new Guid("a2083c81-c5b6-4825-8ca6-13f67a7ce3ec"),
-                            MerchantCategoryGroupsId = new Guid("b16472ad-15bc-4678-85b2-99ff33e4d876")
+                            CompaniesId = new Guid("2869f08c-a8e0-4d67-a153-76f232a154b5"),
+                            MerchantCategoryGroupsId = new Guid("169bcab1-0c3c-42e8-a2ce-06d57da9213a")
                         },
                         new
                         {
-                            CompaniesId = new Guid("75b7c3d7-e43c-4048-90ca-72cedd59b10c"),
-                            MerchantCategoryGroupsId = new Guid("33ec85de-d419-470c-abfb-c46cdd7b788e")
+                            CompaniesId = new Guid("e0506eb7-4a85-4dc4-8705-92ce99688440"),
+                            MerchantCategoryGroupsId = new Guid("b3999514-210f-4942-895c-d760d9423542")
                         },
                         new
                         {
-                            CompaniesId = new Guid("75b7c3d7-e43c-4048-90ca-72cedd59b10c"),
-                            MerchantCategoryGroupsId = new Guid("ad66e86b-69f0-48db-b95b-65f892f1ba08")
+                            CompaniesId = new Guid("e0506eb7-4a85-4dc4-8705-92ce99688440"),
+                            MerchantCategoryGroupsId = new Guid("8981a714-dbb0-461c-b434-2e640811bf14")
                         },
                         new
                         {
-                            CompaniesId = new Guid("75b7c3d7-e43c-4048-90ca-72cedd59b10c"),
-                            MerchantCategoryGroupsId = new Guid("5b030f72-8e8a-4f94-bcfb-fed58c312f2b")
+                            CompaniesId = new Guid("e0506eb7-4a85-4dc4-8705-92ce99688440"),
+                            MerchantCategoryGroupsId = new Guid("b8068328-48b6-47c7-a57a-bc346b7e09ae")
                         });
                 });
 

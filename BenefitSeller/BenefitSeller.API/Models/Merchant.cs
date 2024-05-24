@@ -6,9 +6,9 @@
 
         public string Name { get; set; }
 
-        public double Earnings {  get; set; }
+        public double Earnings { get; set; } = 0;
 
-        public double? DiscountPercentage { get; set; }
+        public double? DiscountPercentage { get; set; } = 0;
 
         public Guid MerchantCategoryId { get; set; }
 

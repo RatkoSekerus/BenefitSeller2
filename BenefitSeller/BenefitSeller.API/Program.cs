@@ -19,6 +19,10 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("BenefitSellerCon
 
 builder.Services.AddScoped<ITransactionsManager, TransactionsManager>();
 builder.Services.AddScoped<ITransactionsRepository, TransactionsRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IMerchantRepository, MerchantRepository>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<IMerchantCategoryGroupRepository, MerchantCategoryGroupRepository>();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 

@@ -136,3 +136,4 @@ C:\Users\seker\vega\BenefitSeller\BenefitSeller.API\bin\Debug\net8.0\runtimes\wi
 C:\Users\seker\vega\BenefitSeller\BenefitSeller.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\seker\vega\BenefitSeller\BenefitSeller.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\seker\vega\BenefitSeller\BenefitSeller.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\seker\vega\BenefitSeller\BenefitSeller.API\obj\Debug\net8.0\BenefitSeller.API.sourcelink.json

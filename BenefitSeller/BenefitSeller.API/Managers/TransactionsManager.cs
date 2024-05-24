@@ -1,29 +1,248 @@
 ﻿using AutoMapper;
 using BenefitSeller.API.Contracts;
+using BenefitSeller.API.ManagerResults;
 using BenefitSeller.API.Models;
 using BenefitSeller.API.ViewModels;
 
 namespace BenefitSeller.API.Managers
 {
+    /// <summary>
+    /// Manages transactions between users and merchants within the system.
+    /// </summary>
     public class TransactionsManager : ITransactionsManager
     {
-        private readonly ITransactionsRepository _repository;
-        private readonly IMapper _mapper;
-        public TransactionsManager(ITransactionsRepository repository, IMapper mapper)
+        #region Private fields
+        private readonly ITransactionsRepository repository;
+        private readonly IMapper mapper;
+        private readonly IUserRepository userRepository;
+        private readonly IMerchantRepository merchantRepository;
+        private readonly ICompanyRepository companyRepository;
+        private readonly IMerchantCategoryGroupRepository merchantCategoryGroupRepository;
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TransactionsManager"/> class.
+        /// </summary>
+        /// <param name="repository">The repository for transactions.</param>
+        /// <param name="userRepository">The repository for users.</param>
+        /// <param name="mapper">The mapper for mapping between objects.</param>
+        /// <param name="merchantRepository">The repository for merchants.</param>
+        /// <param name="companyRepository">The repository for companies.</param>
+        /// <param name="merchantCategoryGroupRepository">The repository for merchant category groups.</param>
+        public TransactionsManager(
+            ITransactionsRepository repository,
+            IUserRepository userRepository,
+            IMapper mapper,
+            IMerchantRepository merchantRepository,
+            ICompanyRepository companyRepository,
+            IMerchantCategoryGroupRepository merchantCategoryGroupRepository)
         {
-            this._repository = repository;
-            this._mapper = mapper;
+            this.repository = repository;
+            this.userRepository = userRepository;
+            this.mapper = mapper;
+            this.merchantRepository = merchantRepository;
+            this.companyRepository = companyRepository;
+            this.merchantCategoryGroupRepository = merchantCategoryGroupRepository;
         }
-        public async Task<List<Transaction>> GetAllAsync()
+        #endregion
+
+        #region ITransactionManager Implementation
+        /// <summary>
+        /// Create a transaction
+        /// </summary>
+        /// <param name="transaction">Transaction model</param>
+        /// <returns>Information if transaction is successful</returns>
+        public async Task<TransactionCreationResult> CreateAsync(TransactionViewModel transaction)
         {
-            return await _repository.GetAllAsync();
+            TransactionCreationResult res = new TransactionCreationResult();
+            Transaction resultTransaction = mapper.Map<Transaction>(transaction);
+
+            bool SaveToDatabase = false;
+            try
+            {
+                User? user = await GetUserByIdAsync((Guid)transaction.UserId);
+                Merchant? merchant = await GetMerchantByIdAsync((Guid)transaction.MerchantId);
+
+                if (user == null || merchant == null)
+                {
+                    List<string> responseMessages = new List<string>();
+                    if (user == null)
+                    {
+                        responseMessages.Add("User doesn't exist");
+                    }
+                    if (merchant == null)
+                    {
+                        responseMessages.Add("Merchant doesn't exist");
+                    }
+
+                    string ResponseMessage = string.Join(", ", responseMessages);
+
+                    res.IsSuccess = false;
+                    res.ResponseMessage = ResponseMessage;
+                }
+                else
+                {
+                    SaveToDatabase = true;
+                    resultTransaction = await CheckTransaction(resultTransaction, user, merchant); 
+                    res.IsSuccess = true;
+                    res.ResponseMessage = "Transaction successfuly created";
+                }
+            } catch (InvalidOperationException ex)
+            {
+                res.IsSuccess = false;
+                res.ResponseMessage = ex.Message;
+            } catch (Exception)
+            {
+                res.IsSuccess = false;
+                res.ResponseMessage = "Transaction failed";
+            }
+            if (SaveToDatabase)
+            {
+                await repository.CreateAsync(resultTransaction);
+            }
+            return res;
         }
 
-        public async Task<bool> CreateAsync(TransactionViewModel transactionViewModel) {
-            
-            Transaction transaction = _mapper.Map<Transaction>(transactionViewModel);
-            Transaction res = await _repository.CreateAsync(transaction);
+        /// <summary>
+        /// Get transactions of the user
+        /// </summary>
+        /// <param name="userId">User Id</param>
+        /// <param name="filterFailed">Set to true if getting failed transactions</param>
+        /// <param name="pageNumber">Set page number if pagination needed</param>
+        /// <param name="pageSize">Set page size if pagination needed</param>
+        /// <returns>List of transactions</returns>
+        public async Task<List<TransactionViewModel>> GetAllByUserId(Guid userId, bool? filterFailed = false, int pageNumber = 1, int pageSize = 100)
+        {
+            StatusOfTransaction transactionStatus = filterFailed.HasValue && filterFailed.Value
+                ? StatusOfTransaction.Failed : StatusOfTransaction.Success;
+
+            List<Transaction> transactions = await repository.GetByUserIdAsync(userId, transactionStatus, pageNumber, pageSize);
+
+            return mapper.Map<List<TransactionViewModel>>(transactions);
+        }
+        #endregion
+
+        #region Private methods
+        /// <summary>
+        /// Checks if the transaction is valid based on user and merchant information.
+        /// </summary>
+        /// <param name="transaction">The transaction to be checked.</param>
+        /// <returns>The validated transaction.</returns>
+        private async Task<Transaction> CheckTransaction(Transaction transaction, User user, Merchant merchant)
+        {
+            ThrowExeptionIfBalanceInvalid(user, transaction);
+            await ThrowExceptionIfSubscriptionInvalid(user, merchant);
+
+            transaction.TransactionStatus = StatusOfTransaction.Success;
+            transaction.Amount = await ChargeUser(user, merchant, transaction.Amount);
+ 
+            return transaction;
+        }
+
+        /// <summary>
+        /// Checks if the user's balance is sufficient for the transaction.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <param name="transaction">The transaction to be checked.</param>
+        /// <returns>True if the user's balance is sufficient; otherwise, false.</returns>
+        private void ThrowExeptionIfBalanceInvalid(User user, Transaction transaction)
+        {
+            if (user.Balance < transaction.Amount)
+            {
+                throw new InvalidOperationException("Transaction amount exceeds user balance.");
+            }
+        }
+
+        /// <summary>
+        /// Checks if the user's subscription allows transactions with the merchant.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <param name="merchant">The merchant.</param>
+        /// <returns>True if the user's subscription allows transactions with the merchant; otherwise, false.</returns>
+        private async Task ThrowExceptionIfSubscriptionInvalid(User user, Merchant merchant)
+        {
+            if(user.SubscriptionPlan.SubscriptionType == SubscriptionType.Standard)
+            {
+                Company? company = await companyRepository.GetByIdAsync(user.CompanyId);
+                ICollection<MerchantCategoryGroup> companyCategoriesGroups = company.MerchantCategoryGroups;
+
+                MerchantCategory merchantCategory = merchant.MerchantCategory;
+
+                MerchantCategoryGroup? merchanCategoryGroup = await merchantCategoryGroupRepository.GetByIdAsync(merchantCategory.MerchantCategoryGroupId);
+
+                bool transacationAllowed = companyCategoriesGroups.Any(mcg => mcg.Name.Equals(merchanCategoryGroup?.Name));
+
+                if (!transacationAllowed)
+                {
+                    throw new InvalidOperationException($"User subscription doesn't include the '{merchanCategoryGroup?.Name}'");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Charges the user for the transaction and updates user and merchant balances.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <param name="merchant">The merchant.</param>
+        /// <param name="amount">The transaction amount.</param>
+        /// <returns>The charged amount.</returns>
+        private async Task<double> ChargeUser(User user, Merchant merchant, double amount)
+        {
+            if (user.SubscriptionPlan.SubscriptionType == SubscriptionType.Platinum) 
+            {
+                CheckForDiscount(ref amount, merchant);
+            }
+
+            amount = Math.Round(amount, 2);
+
+            user.Balance -= amount;
+            merchant.Earnings += amount;
+
+            await userRepository.UpdateAsync(user);
+            await merchantRepository.UpdateAsync(merchant);
+
+            return amount;
+        }
+
+        /// <summary>
+        /// Applies any applicable discount to the transaction amount.
+        /// </summary>
+        /// <param name="amount">The transaction amount.</param>
+        /// <param name="merchant">The merchant.</param>
+        private void CheckForDiscount(ref double amount, Merchant merchant) 
+        {
+            double? discountPercentage = merchant.DiscountPercentage;
+
+            if (discountPercentage.HasValue && discountPercentage > 0)
+            {
+                amount = (double)(amount - (discountPercentage * (double)amount / 100));
+            }
+        }
+
+
+        /// <summary>
+        /// Finds user by id
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns>A populated object of type <see cref="User"/></returns>
+        private async Task<User?> GetUserByIdAsync(Guid userId)
+        {
+            return await userRepository.GetByIdAsync(userId);
 
         }
+
+        /// <summary>
+        /// Finds merchant by id
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns>A populated object of type <see cref="Merchant"/></returns>
+        private async Task<Merchant?> GetMerchantByIdAsync(Guid merchantId)
+        {
+            return await merchantRepository.GetByIdAsync(merchantId);
+
+        }
+        #endregion
+
     }
 }

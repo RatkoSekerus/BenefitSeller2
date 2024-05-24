@@ -68,16 +68,9 @@ namespace BenefitSeller.API.SeedData
 
             // Seed users
             modelBuilder.Entity<User>().HasData(
-                new User { Id = standardUserId, UserName = "StandardUser", Password = "password", SubscriptionPlanId = standardSubscriptionPlanId, CompanyId = standardCompanyId },
-                new User { Id = premiumUserId, UserName = "PremiumUser", Password = "password", SubscriptionPlanId = premiumSubscriptionPlanId, CompanyId = premiumCompanyId },
-                new User { Id = platinumUserId, UserName = "PlatinumUser", Password = "password", SubscriptionPlanId = platinumSubscriptionPlanId, CompanyId = premiumCompanyId }
-            );
-
-            // Seed user cards
-            modelBuilder.Entity<UserCard>().HasData(
-                new UserCard { Id = Guid.NewGuid(), UserId = standardUserId, Balance = 0 },
-                new UserCard { Id = Guid.NewGuid(), UserId = premiumUserId, Balance = 0 },
-                new UserCard { Id = Guid.NewGuid(), UserId = platinumUserId, Balance = 0 }
+                new User { Id = standardUserId, UserName = "StandardUser", SubscriptionPlanId = standardSubscriptionPlanId, CompanyId = standardCompanyId },
+                new User { Id = premiumUserId, UserName = "PremiumUser", SubscriptionPlanId = premiumSubscriptionPlanId, CompanyId = premiumCompanyId },
+                new User { Id = platinumUserId, UserName = "PlatinumUser", SubscriptionPlanId = platinumSubscriptionPlanId, CompanyId = premiumCompanyId }
             );
 
             // Define variables for MerchantCategory Ids

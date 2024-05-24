@@ -6,7 +6,7 @@
 
         public string UserName { get; set; }
 
-        public string Password { get; set; }
+        public double Balance { get; set; } = 100;
 
         public Guid SubscriptionPlanId { get; set; }
 
@@ -17,7 +17,5 @@
         public SubscriptionPlan SubscriptionPlan { get; set; }
 
         public Company Company { get; set; }
-
-        public ICollection<UserCard> UserCards { get; set; }
     }
 }

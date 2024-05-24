@@ -1,13 +1,21 @@
-﻿using BenefitSeller.API.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace BenefitSeller.API.ViewModels
 {
     public class TransactionViewModel
     {
-        public double Amount { get; set; } = 0;
+        public Guid Id { get; set; }
 
-        public Guid UserId { get; set; }
+        [Required]
+        [Range(1, 100)]
+        public double? Amount { get; set; } = 0;
 
-        public Guid MerchantId { get; set; }
+        public DateTime? TransactionDate { get; set; }
+
+        [Required(ErrorMessage = "UserId is required")]
+        public Guid? UserId { get; set; }
+
+        [Required(ErrorMessage = "MerchantId is required")]
+        public Guid? MerchantId { get; set; }
     }
 }

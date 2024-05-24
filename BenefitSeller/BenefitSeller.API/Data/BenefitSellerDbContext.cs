@@ -25,8 +25,6 @@ namespace BenefitSeller.API.Data
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<UserCard> UserCards { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Transaction>()
@@ -37,7 +35,7 @@ namespace BenefitSeller.API.Data
                 .Property(m => m.TransactionStatus)
                 .HasDefaultValue(StatusOfTransaction.Failed);
 
-            modelBuilder.Entity<UserCard>()
+            modelBuilder.Entity<User>()
                 .Property(m => m.Balance)
                 .HasDefaultValue(0);
 
