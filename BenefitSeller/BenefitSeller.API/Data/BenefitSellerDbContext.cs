@@ -1,4 +1,5 @@
 ﻿using BenefitSeller.API.Models;
+using BenefitSeller.API.Models.DomainModels;
 using BenefitSeller.API.SeedData;
 using Microsoft.EntityFrameworkCore;
 

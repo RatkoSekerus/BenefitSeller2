@@ -1,4 +1,5 @@
 ﻿using BenefitSeller.API.Models;
+using BenefitSeller.API.Models.DomainModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace BenefitSeller.API.SeedData
@@ -50,9 +51,9 @@ namespace BenefitSeller.API.SeedData
             var premiumCompanyId = Guid.NewGuid();
             var platinumCompanyId = Guid.NewGuid();
 
-            var Company1 = new Company { Id = standardCompanyId, Name = "StandardCompany"};
-            var Company2 = new Company { Id = premiumCompanyId, Name = "PremiumCompany"};
-            var Company3 = new Company { Id = platinumCompanyId, Name = "PlatinumCompany"};
+            var Company1 = new Company { Id = standardCompanyId, Name = "Company with standard user"};
+            var Company2 = new Company { Id = premiumCompanyId, Name = "Company with premium user" };
+            var Company3 = new Company { Id = platinumCompanyId, Name = "Company with platinum user" };
 
             // Seed companies
             modelBuilder.Entity<Company>().HasData(

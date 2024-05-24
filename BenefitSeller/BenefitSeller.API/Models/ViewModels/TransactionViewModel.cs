@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BenefitSeller.API.ViewModels
+namespace BenefitSeller.API.Models.ViewModels
 {
     /// <summary>
     /// Represents a view model for a transaction.

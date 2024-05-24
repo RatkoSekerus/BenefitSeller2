@@ -1,8 +1,7 @@
 ﻿using BenefitSeller.API.ManagerResults;
-using BenefitSeller.API.Models;
-using BenefitSeller.API.ViewModels;
+using BenefitSeller.API.Models.ViewModels;
 
-namespace BenefitSeller.API.Contracts
+namespace BenefitSeller.API.Contracts.ManagerInterfaces
 {
     /// <summary>
     /// Represents a repository for performing operations on on <see cref="Transaction"/> entities.

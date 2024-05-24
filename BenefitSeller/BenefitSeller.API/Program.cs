@@ -1,4 +1,5 @@
-using BenefitSeller.API.Contracts;
+using BenefitSeller.API.Contracts.ManagerInterfaces;
+using BenefitSeller.API.Contracts.RepositoryInterfaces;
 using BenefitSeller.API.Data;
 using BenefitSeller.API.Managers;
 using BenefitSeller.API.Mappings;

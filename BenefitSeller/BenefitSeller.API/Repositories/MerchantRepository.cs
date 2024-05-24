@@ -1,6 +1,6 @@
-﻿using BenefitSeller.API.Contracts;
+﻿using BenefitSeller.API.Contracts.RepositoryInterfaces;
 using BenefitSeller.API.Data;
-using BenefitSeller.API.Models;
+using BenefitSeller.API.Models.DomainModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace BenefitSeller.API.Repositories

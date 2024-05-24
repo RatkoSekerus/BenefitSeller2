@@ -1,7 +1,7 @@
 ﻿using BenefitSeller.API.ActionFilters;
-using BenefitSeller.API.Contracts;
+using BenefitSeller.API.Contracts.ManagerInterfaces;
 using BenefitSeller.API.ManagerResults;
-using BenefitSeller.API.ViewModels;
+using BenefitSeller.API.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

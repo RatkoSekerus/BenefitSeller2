@@ -1,6 +1,6 @@
-﻿using BenefitSeller.API.Models;
+﻿using BenefitSeller.API.Models.DomainModels;
 
-namespace BenefitSeller.API.Contracts
+namespace BenefitSeller.API.Contracts.RepositoryInterfaces
 {
     /// <summary>
     /// Represents a repository for performing operations on <see cref="Merchant"/> entities.

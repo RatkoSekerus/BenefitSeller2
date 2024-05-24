@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
-using BenefitSeller.API.Contracts;
+using BenefitSeller.API.Contracts.ManagerInterfaces;
+using BenefitSeller.API.Contracts.RepositoryInterfaces;
 using BenefitSeller.API.ManagerResults;
+using BenefitSeller.API.Models.DomainModels;
+using BenefitSeller.API.Models.ViewModels;
 using BenefitSeller.API.Models;
-using BenefitSeller.API.ViewModels;
 
 namespace BenefitSeller.API.Managers
 {
@@ -85,6 +87,7 @@ namespace BenefitSeller.API.Managers
                 {
                     SaveToDatabase = true;
                     resultTransaction = await CheckTransaction(resultTransaction, user, merchant); 
+
                     res.IsSuccess = true;
                     res.ResponseMessage = "Transaction successfuly created";
                 }
@@ -116,10 +119,11 @@ namespace BenefitSeller.API.Managers
         {
             TransactionResult res = new TransactionResult();
             User? user = await GetUserByIdAsync(userId);
+
             if (user != null)
             {
                 StatusOfTransaction transactionStatus = filterFailed.HasValue && filterFailed.Value
-               ? StatusOfTransaction.Failed : StatusOfTransaction.Success;
+                    ? StatusOfTransaction.Failed : StatusOfTransaction.Success;
 
                 List<Transaction> transactions = await repository.GetByUserIdAsync(userId, transactionStatus, pageNumber, pageSize);
 
@@ -129,7 +133,7 @@ namespace BenefitSeller.API.Managers
             }          
             else
             {
-                res.IsSuccess= false;
+                res.IsSuccess = false;
                 res.ResponseMessage = "User doesn't exist";
             }
             return res;
@@ -145,11 +149,11 @@ namespace BenefitSeller.API.Managers
         /// <returns>The validated transaction.</returns>
         private async Task<Transaction> CheckTransaction(Transaction transaction, User user, Merchant merchant)
         {
-            ThrowExeptionIfBalanceInvalid(user, transaction);
+            transaction.Amount = Math.Round(ThrowExeptionIfBalanceInvalid(user, transaction, merchant),2);
             await ThrowExceptionIfSubscriptionInvalid(user, merchant);
 
             transaction.TransactionStatus = StatusOfTransaction.Success;
-            transaction.Amount = await ChargeUser(user, merchant, transaction.Amount);
+            await ChargeUser(user, merchant, transaction.Amount);
  
             return transaction;
         }
@@ -160,12 +164,21 @@ namespace BenefitSeller.API.Managers
         /// <param name="user">The user.</param>
         /// <param name="transaction">The transaction to be checked.</param>
         /// <returns>True if the user's balance is sufficient; otherwise, false.</returns>
-        private void ThrowExeptionIfBalanceInvalid(User user, Transaction transaction)
+        private double ThrowExeptionIfBalanceInvalid(User user, Transaction transaction, Merchant merchant)
         {
-            if (user.Balance < transaction.Amount)
+            double amount = transaction.Amount;
+
+            if (user.SubscriptionPlan.SubscriptionType == SubscriptionType.Platinum)
+            {
+                CheckForDiscount(ref amount, merchant);
+            }
+
+            if (user.Balance < amount)
             {
                 throw new InvalidOperationException("Transaction amount exceeds user balance.");
             }
+
+            return amount;
         }
 
         /// <summary>
@@ -181,9 +194,7 @@ namespace BenefitSeller.API.Managers
                 Company? company = await companyRepository.GetByIdAsync(user.CompanyId);
                 ICollection<MerchantCategoryGroup> companyCategoriesGroups = company.MerchantCategoryGroups;
 
-                MerchantCategory merchantCategory = merchant.MerchantCategory;
-
-                MerchantCategoryGroup? merchanCategoryGroup = await merchantCategoryGroupRepository.GetByIdAsync(merchantCategory.MerchantCategoryGroupId);
+                MerchantCategoryGroup? merchanCategoryGroup = await merchantCategoryGroupRepository.GetByIdAsync(merchant.MerchantCategory.MerchantCategoryGroupId);
 
                 bool transacationAllowed = companyCategoriesGroups.Any(mcg => mcg.Name.Equals(merchanCategoryGroup?.Name));
 
@@ -201,13 +212,8 @@ namespace BenefitSeller.API.Managers
         /// <param name="merchant">The merchant.</param>
         /// <param name="amount">The transaction amount.</param>
         /// <returns>The charged amount.</returns>
-        private async Task<double> ChargeUser(User user, Merchant merchant, double amount)
+        private async Task ChargeUser(User user, Merchant merchant, double amount)
         {
-            if (user.SubscriptionPlan.SubscriptionType == SubscriptionType.Platinum) 
-            {
-                CheckForDiscount(ref amount, merchant);
-            }
-
             amount = Math.Round(amount, 2);
 
             user.Balance -= amount;
@@ -215,8 +221,6 @@ namespace BenefitSeller.API.Managers
 
             await userRepository.UpdateAsync(user);
             await merchantRepository.UpdateAsync(merchant);
-
-            return amount;
         }
 
         /// <summary>

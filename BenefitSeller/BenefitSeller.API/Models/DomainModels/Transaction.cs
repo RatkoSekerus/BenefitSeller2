@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using System.Transactions;
-
-namespace BenefitSeller.API.Models
+﻿namespace BenefitSeller.API.Models.DomainModels
 {
     /// <summary>
     /// Represents a transaction entity.

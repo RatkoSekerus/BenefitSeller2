@@ -1,4 +1,4 @@
-﻿using BenefitSeller.API.ViewModels;
+﻿using BenefitSeller.API.Models.ViewModels;
 
 namespace BenefitSeller.API.ManagerResults
 {

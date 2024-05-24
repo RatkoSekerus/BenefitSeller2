@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using BenefitSeller.API.Models;
-using BenefitSeller.API.ViewModels;
+using BenefitSeller.API.Models.DomainModels;
+using BenefitSeller.API.Models.ViewModels;
 
 namespace BenefitSeller.API.Mappings
 {

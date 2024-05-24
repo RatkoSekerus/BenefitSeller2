@@ -1,4 +1,4 @@
-﻿namespace BenefitSeller.API.Models
+﻿namespace BenefitSeller.API.Models.DomainModels
 {
     /// <summary>
     /// Represents a category of merchants.
