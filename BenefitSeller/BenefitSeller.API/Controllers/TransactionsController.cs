@@ -56,7 +56,7 @@ namespace BenefitSeller.API.Controllers
         [ValidateModel]
         public async Task<IActionResult> Create([FromBody] TransactionViewModel transaction)
         {
-                TransactionCreationResult res = await _transactionsManager.CreateAsync(transaction);
+                TransactionResult res = await _transactionsManager.CreateAsync(transaction);
                 return res.IsSuccess ? Ok(res) : BadRequest(res);
         }
         #endregion

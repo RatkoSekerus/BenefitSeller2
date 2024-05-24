@@ -53,9 +53,9 @@ namespace BenefitSeller.API.Managers
         /// </summary>
         /// <param name="transaction">Transaction model</param>
         /// <returns>Information if transaction is successful</returns>
-        public async Task<TransactionCreationResult> CreateAsync(TransactionViewModel transaction)
+        public async Task<TransactionResult> CreateAsync(TransactionViewModel transaction)
         {
-            TransactionCreationResult res = new TransactionCreationResult();
+            TransactionResult res = new TransactionResult();
             Transaction resultTransaction = mapper.Map<Transaction>(transaction);
 
             bool SaveToDatabase = false;
@@ -112,14 +112,28 @@ namespace BenefitSeller.API.Managers
         /// <param name="pageNumber">Set page number if pagination needed</param>
         /// <param name="pageSize">Set page size if pagination needed</param>
         /// <returns>List of transactions</returns>
-        public async Task<List<TransactionViewModel>> GetAllByUserId(Guid userId, bool? filterFailed = false, int pageNumber = 1, int pageSize = 100)
+        public async Task<TransactionResult> GetAllByUserId(Guid userId, bool? filterFailed = false, int pageNumber = 1, int pageSize = 100)
         {
-            StatusOfTransaction transactionStatus = filterFailed.HasValue && filterFailed.Value
-                ? StatusOfTransaction.Failed : StatusOfTransaction.Success;
+            TransactionResult res = new TransactionResult();
+            User? user = await GetUserByIdAsync(userId);
+            if (user != null)
+            {
+                StatusOfTransaction transactionStatus = filterFailed.HasValue && filterFailed.Value
+               ? StatusOfTransaction.Failed : StatusOfTransaction.Success;
 
-            List<Transaction> transactions = await repository.GetByUserIdAsync(userId, transactionStatus, pageNumber, pageSize);
+                List<Transaction> transactions = await repository.GetByUserIdAsync(userId, transactionStatus, pageNumber, pageSize);
 
-            return mapper.Map<List<TransactionViewModel>>(transactions);
+                res.Transactions = mapper.Map<List<TransactionViewModel>>(transactions);
+                res.IsSuccess = true;
+                res.ResponseMessage = filterFailed == true ? "Failed transactions" : "Successful transactions";
+            }          
+            else
+            {
+                res.IsSuccess= false;
+                res.ResponseMessage = "User doesn't exist";
+            }
+            return res;
+           
         }
         #endregion
 

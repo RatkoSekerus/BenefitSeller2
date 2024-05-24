@@ -16,14 +16,14 @@ namespace BenefitSeller.API.Contracts
         /// <param name="filterFailed">Set to true to retrieve failed transactions.</param>
         /// <param name="pageNumber">Specifies the page number if pagination is needed.</param>
         /// <param name="pageSize">Specifies the page size if pagination is needed.</param>
-        /// <returns>A populated list of <see cref="TransactionViewModel"/> objects.</returns>
-        Task<List<TransactionViewModel>> GetAllByUserId(Guid userId, bool? filterFailed, int pageNumber, int pageSize);
+        /// <returns>A populated object of <see cref="TransactionResult"/>.</returns>
+        Task<TransactionResult> GetAllByUserId(Guid userId, bool? filterFailed, int pageNumber, int pageSize);
 
         /// <summary>
         /// Creates a new transaction.
         /// </summary>
         /// <param name="transaction">The transaction model to be created.</param>
-        /// <returns>True if the transaction was created successfully; otherwise, false.</returns>
-        Task<TransactionCreationResult> CreateAsync(TransactionViewModel transaction);
+        /// <returns>A populated object of <see cref="TransactionResult"/>.</returns>
+        Task<TransactionResult> CreateAsync(TransactionViewModel transaction);
     }
 }
