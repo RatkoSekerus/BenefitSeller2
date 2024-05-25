@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BenefitSellerXUnit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18ca5a0ec583d5dc5289d3abb4c4003ef32880b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70115b86989763ca1e7722678648e09b161e21ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("BenefitSellerXUnit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BenefitSellerXUnit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
