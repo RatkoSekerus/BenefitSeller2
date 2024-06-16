@@ -12,15 +12,30 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\seker\.nuget\packages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)dapper.fastcrud.modelgenerator\3.3.1\contentFiles\any\any\Models\GenericModelGenerator.tt" Condition="Exists('$(NuGetPackageRoot)dapper.fastcrud.modelgenerator\3.3.1\contentFiles\any\any\Models\GenericModelGenerator.tt')">
+      <NuGetPackageId>Dapper.FastCrud.ModelGenerator</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Models\GenericModelGenerator.tt</Link>
+    </None>
+    <None Include="$(NuGetPackageRoot)dapper.fastcrud.modelgenerator\3.3.1\contentFiles\any\any\Models\SampleModelGeneratorConfig.tt" Condition="Exists('$(NuGetPackageRoot)dapper.fastcrud.modelgenerator\3.3.1\contentFiles\any\any\Models\SampleModelGeneratorConfig.tt')">
+      <NuGetPackageId>Dapper.FastCrud.ModelGenerator</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Models\SampleModelGeneratorConfig.tt</Link>
+    </None>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props')" />
     <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.4.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.4.0\build\Swashbuckle.AspNetCore.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.5\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.5\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\8.0.5\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\8.0.5\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)dapper.fastcrud.modelgenerator\3.3.1\Build\Dapper.FastCrud.ModelGenerator.props" Condition="Exists('$(NuGetPackageRoot)dapper.fastcrud.modelgenerator\3.3.1\Build\Dapper.FastCrud.ModelGenerator.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\seker\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\seker\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\seker\.nuget\packages\microsoft.entityframeworkcore.tools\8.0.5</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

@@ -14,6 +14,6 @@ namespace BenefitSeller.API.Contracts.RepositoryInterfaces
         /// <returns>
         /// A populated object of type <see cref="MerchantCategoryGroup"/>, or null if no entity with the specified id is found.
         /// </returns>
-        Task<MerchantCategoryGroup?> GetByIdAsync(Guid id);
+        Task<MerchantCategoryGroup?> GetByIdAsync(int id);
     }
 }

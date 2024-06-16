@@ -5,6 +5,9 @@ using BenefitSeller.API.ManagerResults;
 using BenefitSeller.API.Models.DomainModels;
 using BenefitSeller.API.Models.ViewModels;
 using BenefitSeller.API.Models;
+using BenefitSeller.API.Validation;
+using FluentValidation.Results;
+using FluentValidation;
 
 namespace BenefitSeller.API.Managers
 {
@@ -63,8 +66,10 @@ namespace BenefitSeller.API.Managers
             bool SaveToDatabase = false;
             try
             {
-                User? user = await GetUserByIdAsync((Guid)transaction.UserId);
-                Merchant? merchant = await GetMerchantByIdAsync((Guid)transaction.MerchantId);
+                ValidateTransaction(transaction);
+
+                User? user = await GetUserByIdAsync((int)transaction.UserId);
+                Merchant? merchant = await GetMerchantByIdAsync((int)transaction.MerchantId);
 
                 if (user == null || merchant == null)
                 {
@@ -91,11 +96,13 @@ namespace BenefitSeller.API.Managers
                     res.IsSuccess = true;
                     res.ResponseMessage = "Transaction successfuly created";
                 }
-            } catch (InvalidOperationException ex)
+            }
+            catch (Exception ex) when (ex is ValidationException || ex is InvalidOperationException)
             {
                 res.IsSuccess = false;
                 res.ResponseMessage = ex.Message;
-            } catch (Exception)
+            }
+            catch (Exception e)
             {
                 res.IsSuccess = false;
                 res.ResponseMessage = "Transaction failed";
@@ -115,7 +122,7 @@ namespace BenefitSeller.API.Managers
         /// <param name="pageNumber">Set page number if pagination needed</param>
         /// <param name="pageSize">Set page size if pagination needed</param>
         /// <returns>List of transactions</returns>
-        public async Task<TransactionResult> GetAllByUserId(Guid userId, bool? filterFailed = false, int pageNumber = 1, int pageSize = 100)
+        public async Task<TransactionResult> GetAllByUserId(int userId, bool? filterFailed = false, int pageNumber = 1, int pageSize = 100)
         {
             TransactionResult res = new TransactionResult();
             User? user = await GetUserByIdAsync(userId);
@@ -164,9 +171,9 @@ namespace BenefitSeller.API.Managers
         /// <param name="user">The user.</param>
         /// <param name="transaction">The transaction to be checked.</param>
         /// <returns>True if the user's balance is sufficient; otherwise, false.</returns>
-        private double ThrowExeptionIfBalanceInvalid(User user, Transaction transaction, Merchant merchant)
+        private decimal ThrowExeptionIfBalanceInvalid(User user, Transaction transaction, Merchant merchant)
         {
-            double amount = transaction.Amount;
+            decimal amount = transaction.Amount;
 
             if (user.SubscriptionPlan.SubscriptionType == SubscriptionType.Platinum)
             {
@@ -212,7 +219,7 @@ namespace BenefitSeller.API.Managers
         /// <param name="merchant">The merchant.</param>
         /// <param name="amount">The transaction amount.</param>
         /// <returns>The charged amount.</returns>
-        private async Task ChargeUser(User user, Merchant merchant, double amount)
+        private async Task ChargeUser(User user, Merchant merchant, decimal amount)
         {
             amount = Math.Round(amount, 2);
 
@@ -228,13 +235,13 @@ namespace BenefitSeller.API.Managers
         /// </summary>
         /// <param name="amount">The transaction amount.</param>
         /// <param name="merchant">The merchant.</param>
-        private void CheckForDiscount(ref double amount, Merchant merchant) 
+        private void CheckForDiscount(ref decimal amount, Merchant merchant) 
         {
-            double? discountPercentage = merchant.DiscountPercentage;
+            decimal? discountPercentage = merchant.DiscountPercentage;
 
             if (discountPercentage.HasValue && discountPercentage > 0)
             {
-                amount = (double)(amount - (discountPercentage * (double)amount / 100));
+                amount = (decimal)(amount - (discountPercentage * (decimal)amount / 100));
             }
         }
 
@@ -244,7 +251,7 @@ namespace BenefitSeller.API.Managers
         /// </summary>
         /// <param name="userId"></param>
         /// <returns>A populated object of type <see cref="User"/></returns>
-        private async Task<User?> GetUserByIdAsync(Guid userId)
+        private async Task<User?> GetUserByIdAsync(int userId)
         {
             return await userRepository.GetByIdAsync(userId);
 
@@ -255,9 +262,17 @@ namespace BenefitSeller.API.Managers
         /// </summary>
         /// <param name="userId"></param>
         /// <returns>A populated object of type <see cref="Merchant"/></returns>
-        private async Task<Merchant?> GetMerchantByIdAsync(Guid merchantId)
+        private async Task<Merchant?> GetMerchantByIdAsync(int merchantId)
         {
             return await merchantRepository.GetByIdAsync(merchantId);
+
+        }
+
+
+        private void ValidateTransaction(TransactionViewModel transaction)
+        {
+            TransactionValidation transactionValidator = new TransactionValidation();
+            transactionValidator.ValidateAndThrow(transaction);
 
         }
         #endregion

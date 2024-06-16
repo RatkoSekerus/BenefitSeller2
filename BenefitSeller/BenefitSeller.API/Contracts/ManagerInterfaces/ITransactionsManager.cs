@@ -16,7 +16,7 @@ namespace BenefitSeller.API.Contracts.ManagerInterfaces
         /// <param name="pageNumber">Specifies the page number if pagination is needed.</param>
         /// <param name="pageSize">Specifies the page size if pagination is needed.</param>
         /// <returns>A populated object of <see cref="TransactionResult"/>.</returns>
-        Task<TransactionResult> GetAllByUserId(Guid userId, bool? filterFailed, int pageNumber, int pageSize);
+        Task<TransactionResult> GetAllByUserId(int userId, bool? filterFailed, int pageNumber, int pageSize);
 
         /// <summary>
         /// Creates a new transaction.

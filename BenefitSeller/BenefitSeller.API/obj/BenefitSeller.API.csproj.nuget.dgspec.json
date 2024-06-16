@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {}
+    "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {
+    "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
+        "projectUniqueName": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
         "projectName": "BenefitSeller.API",
-        "projectPath": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
+        "projectPath": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
         "packagesPath": "C:\\Users\\seker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\obj\\",
+        "outputPath": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\seker\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,23 +49,33 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Dapper.FastCrud": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Dapper.FastCrud.ModelGenerator": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.2, )"
             },
-            "Microsoft.EntityFrameworkCore.Relational": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[8.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[4.1.14, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.Configuration.Annotations;
 using BenefitSeller.API.Models.DomainModels;
 using BenefitSeller.API.Models.ViewModels;
 
@@ -8,7 +9,8 @@ namespace BenefitSeller.API.Mappings
     {
         public AutoMapperProfiles()
         {
-            CreateMap<Transaction, TransactionViewModel>()
+            CreateMap<TransactionViewModel, Transaction>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
                 .ReverseMap();
         }
     }

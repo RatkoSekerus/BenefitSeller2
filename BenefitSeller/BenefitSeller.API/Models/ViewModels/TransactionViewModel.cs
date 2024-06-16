@@ -10,7 +10,7 @@ namespace BenefitSeller.API.Models.ViewModels
         /// <summary>
         /// Gets or sets the unique identifier of the transaction.
         /// </summary>
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the amount of the transaction.
@@ -28,12 +28,12 @@ namespace BenefitSeller.API.Models.ViewModels
         /// Gets or sets the unique identifier of the user associated with the transaction.
         /// </summary>
         [Required(ErrorMessage = "UserId is required")]
-        public Guid? UserId { get; set; }
+        public int? UserId { get; set; }
 
         /// <summary>
         /// Gets or sets the unique identifier of the merchant associated with the transaction.
         /// </summary>
         [Required(ErrorMessage = "MerchantId is required")]
-        public Guid? MerchantId { get; set; }
+        public int? MerchantId { get; set; }
     }
 }

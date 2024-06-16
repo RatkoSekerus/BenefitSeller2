@@ -14,7 +14,7 @@ namespace BenefitSeller.API.Contracts.RepositoryInterfaces
         /// <returns>
         /// A populated object of type <see cref="Merchant"/>, or null if no Merchant with the specified id is found.
         /// </returns>
-        Task<Merchant?> GetByIdAsync(Guid id);
+        Task<Merchant?> GetByIdAsync(int id);
 
         /// <summary>
         /// Updates an existing Merchant entity.

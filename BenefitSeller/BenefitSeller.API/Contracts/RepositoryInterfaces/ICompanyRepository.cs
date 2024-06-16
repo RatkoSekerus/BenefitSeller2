@@ -14,6 +14,6 @@ namespace BenefitSeller.API.Contracts.RepositoryInterfaces
         /// <returns>
         /// A populated object of type <see cref="Company"/>, or null if no Company with the specified id is found.
         /// </returns>
-        Task<Company?> GetByIdAsync(Guid id);
+        Task<Company?> GetByIdAsync(int id);
     }
 }

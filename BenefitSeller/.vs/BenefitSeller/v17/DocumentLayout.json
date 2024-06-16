@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\seker\\vega\\BenefitSeller\\",
+  "WorkspaceRootPath": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\managers\\transactionsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\managers\\transactionsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11E16C10-3D21-4ACB-B251-567A6A39C127}|BenefitSellerNUnit\\BenefitSellerNUnit.csproj|c:\\users\\seker\\onedrive\\desktop\\iqvia\\benefitseller\\benefitseller\\benefitsellernunit\\repositorytests\\transactionrepositorynunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11E16C10-3D21-4ACB-B251-567A6A39C127}|BenefitSellerNUnit\\BenefitSellerNUnit.csproj|solutionrelative:benefitsellernunit\\repositorytests\\transactionrepositorynunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70FE5ED7-694E-44AB-9367-AF81E50D4FF3}|BenefitSellerXUnit\\BenefitSellerXUnit.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitsellerxunit\\benefitsellerxunit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{70FE5ED7-694E-44AB-9367-AF81E50D4FF3}|BenefitSellerXUnit\\BenefitSellerXUnit.csproj|solutionrelative:benefitsellerxunit\\benefitsellerxunit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\onedrive\\desktop\\iqvia\\benefitseller\\benefitseller\\benefitseller.api\\repositories\\dbconnectionwrappers\\dbconnectionwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\repositories\\dbconnectionwrappers\\dbconnectionwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70FE5ED7-694E-44AB-9367-AF81E50D4FF3}|BenefitSellerXUnit\\BenefitSellerXUnit.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitsellerxunit\\transactionsmanagerxunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70FE5ED7-694E-44AB-9367-AF81E50D4FF3}|BenefitSellerXUnit\\BenefitSellerXUnit.csproj|solutionrelative:benefitsellerxunit\\transactionsmanagerxunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\vega\\benefitseller\\benefitseller.api\\managerresults\\transactionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\managerresults\\transactionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\onedrive\\desktop\\iqvia\\benefitseller\\benefitseller\\benefitseller.api\\repositories\\transactionsrepositorydapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\repositories\\transactionsrepositorydapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,76 +21,52 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 242,
-          "SelectedChildIndex": 4,
+          "DockedHeight": 259,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Mappings\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\Mappings\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Mappings\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "BenefitSeller.API\\Mappings\\AutoMapperProfiles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T10:08:56.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TransactionResult.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\ManagerResults\\TransactionResult.cs",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\ManagerResults\\TransactionResult.cs",
-              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\ManagerResults\\TransactionResult.cs",
-              "RelativeToolTip": "BenefitSeller.API\\ManagerResults\\TransactionResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T09:53:49.558Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BenefitSellerXUnit.csproj",
-              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSellerXUnit\\BenefitSellerXUnit.csproj",
-              "RelativeDocumentMoniker": "BenefitSellerXUnit\\BenefitSellerXUnit.csproj",
-              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSellerXUnit\\BenefitSellerXUnit.csproj",
-              "RelativeToolTip": "BenefitSellerXUnit\\BenefitSellerXUnit.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-25T09:44:31.853Z",
+              "Title": "DbConnectionWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
+              "ToolTip": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T12:38:43.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TransactionsManagerXUnitTests.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSellerXUnit\\TransactionsManagerXUnitTests.cs",
-              "RelativeDocumentMoniker": "BenefitSellerXUnit\\TransactionsManagerXUnitTests.cs",
-              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSellerXUnit\\TransactionsManagerXUnitTests.cs",
-              "RelativeToolTip": "BenefitSellerXUnit\\TransactionsManagerXUnitTests.cs",
-              "ViewState": "AQIAAMIAAAAAAAAAAAAswN4AAAA7AAAA",
+              "Title": "TransactionsRepositoryDapper.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
+              "ToolTip": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAIA8wCwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T09:47:29.592Z",
+              "WhenOpened": "2024-06-16T12:15:46.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TransactionsManager.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Managers\\TransactionsManager.cs",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\Managers\\TransactionsManager.cs",
-              "ToolTip": "C:\\Users\\seker\\vega\\BenefitSeller\\BenefitSeller.API\\Managers\\TransactionsManager.cs",
-              "RelativeToolTip": "BenefitSeller.API\\Managers\\TransactionsManager.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAcwHgAAAAMAAAA",
+              "Title": "TransactionRepositoryNUnitTests.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSellerNUnit\\RepositoryTests\\TransactionRepositoryNUnitTests.cs",
+              "RelativeDocumentMoniker": "BenefitSellerNUnit\\RepositoryTests\\TransactionRepositoryNUnitTests.cs",
+              "ToolTip": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSellerNUnit\\RepositoryTests\\TransactionRepositoryNUnitTests.cs",
+              "RelativeToolTip": "BenefitSellerNUnit\\RepositoryTests\\TransactionRepositoryNUnitTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T23:00:26.506Z",
+              "WhenOpened": "2024-06-16T12:11:05.823Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 158,
+          "DockedHeight": 59,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -107,15 +75,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

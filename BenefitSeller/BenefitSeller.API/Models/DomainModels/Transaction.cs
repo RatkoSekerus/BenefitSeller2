@@ -1,44 +1,59 @@
-﻿namespace BenefitSeller.API.Models.DomainModels
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BenefitSeller.API.Models.DomainModels
 {
     /// <summary>
     /// Represents a transaction entity.
     /// </summary>
+    [Table("transactions")]
     public class Transaction
     {
         /// <summary>
         /// Gets or sets the unique identifier of the transaction.
         /// </summary>
-        public Guid Id { get; set; }
+        [Key]
+        [Column("id")]
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the amount of the transaction.
         /// </summary>
-        public double Amount { get; set; } = 10;
+        [Column("amount")]
+        public decimal Amount { get; set; } = 10;
 
         /// <summary>
         /// Gets or sets the date and time of the transaction.
         /// </summary>
-        public DateTime TransactionDate { get; set; } = DateTime.Now;
+        [Column("transactiondate")]
+        public DateTime TransactionDate { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Gets or sets the status of the transaction.
         /// </summary>
+        [Column("transactionstatus")]
         public StatusOfTransaction TransactionStatus { get; set; } = StatusOfTransaction.Failed;
 
         /// <summary>
         /// Gets or sets the identifier of the user associated with the transaction.
         /// </summary>
-        public Guid UserId { get; set; }
+        [ForeignKey(nameof(UserId))]
+        [Column("userid")]
+        public int UserId { get; set; }
 
         /// <summary>
         /// Gets or sets the identifier of the merchant associated with the transaction.
         /// </summary>
-        public Guid MerchantId { get; set; }
+        [ForeignKey(nameof(MerchantId))]
+        [Column("merchantid")]
+        public int MerchantId { get; set; }
 
 
         // navigation properties
-        public Merchant Merchant { get; set; }
+        [NotMapped]
+        public Merchant? Merchant { get; set; }
 
-        public User User { get; set; }
+        [NotMapped]
+        public User? User { get; set; }
     }
 }

@@ -39,8 +39,8 @@ namespace BenefitSeller.API.Controllers
         /// <param name="pageSize">The page size for pagination (default is 100).</param>
         /// <returns>An HTTP response containing the list of transactions.</returns>
         [HttpGet]
-        [Route("user/{userId:Guid}")]
-        public async Task<IActionResult> GetAllByUserId([FromRoute] Guid userId, [FromQuery] bool? filterFailed,
+        [Route("user/{userId:int}")]
+        public async Task<IActionResult> GetAllByUserId([FromRoute] int userId, [FromQuery] bool? filterFailed,
             [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 100)
         {
             var res = await _transactionsManager.GetAllByUserId(userId, filterFailed, pageNumber, pageSize);

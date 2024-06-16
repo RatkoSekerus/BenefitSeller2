@@ -12,7 +12,7 @@ namespace BenefitSeller.API.Contracts.RepositoryInterfaces
         /// </summary>
         /// <param name="id">The unique identifier of the user.</param>
         /// <returns>A populated object of type <see cref="User"/></returns>
-        Task<User?> GetByIdAsync(Guid id);
+        Task<User?> GetByIdAsync(int id);
 
         /// <summary>
         /// Updates an existing user asynchronously.
