@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BenefitSellerNUnit
-build_property.ProjectDir = C:\Users\seker\OneDrive\Desktop\iqvia\BenefitSeller\BenefitSeller\BenefitSellerNUnit\
+build_property.ProjectDir = C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSellerNUnit\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

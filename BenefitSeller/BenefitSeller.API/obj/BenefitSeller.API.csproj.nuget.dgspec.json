@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {}
+    "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {
+    "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
+        "projectUniqueName": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
         "projectName": "BenefitSeller.API",
-        "projectPath": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
+        "projectPath": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
         "packagesPath": "C:\\Users\\seker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seker\\OneDrive\\Desktop\\iqvia\\BenefitSeller\\BenefitSeller\\BenefitSeller.API\\obj\\",
+        "outputPath": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\seker\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,6 +64,10 @@
             "Dapper.FastCrud.ModelGenerator": {
               "target": "Package",
               "version": "[3.3.1, )"
+            },
+            "DbUp-PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.40, )"
             },
             "FluentValidation": {
               "target": "Package",
