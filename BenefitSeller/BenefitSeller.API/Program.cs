@@ -7,8 +7,14 @@ using BenefitSeller.API.Repositories;
 using BenefitSeller.API.Repositories.DbConnectionWrappers;
 using Dapper.FastCrud;
 using Npgsql;
-using System.Collections;
 using System.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using BenefitSeller.API.IdentityData;
+using System.Security.Claims;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +33,7 @@ builder.Services.AddScoped<IMerchantRepository, MerchantRepositoryDapper>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepositoryDapper>();
 builder.Services.AddScoped<IMerchantCategoryGroupRepository, MerchantCategoryGroupRepositoryDapper>();
 builder.Services.AddScoped<IDbConnectionWrapper, DbConnectionWrapper>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var dbHost = Environment.GetEnvironmentVariable("POSTGRES_HOST");
 var dbName = Environment.GetEnvironmentVariable("POSTGRES_DB");
@@ -60,6 +67,33 @@ OrmConfiguration.DefaultDialect = SqlDialect.PostgreSql;
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+}   
+).AddJwtBearer(x =>
+{
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+        ValidAudience = builder.Configuration["JwtSettings:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])),
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true
+    };
+}
+);
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy(IdentityData.AdminUserPolicyName, p =>
+    p.RequireClaim(ClaimTypes.Role, IdentityData.AdminUserClaimValue));
+});
+
 var app = builder.Build();
 
 {
@@ -83,6 +117,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

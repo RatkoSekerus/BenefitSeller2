@@ -77,6 +77,13 @@ CREATE TABLE companybenefit (
     CONSTRAINT fk_merchantcategorygroup FOREIGN KEY (merchantcategorygroupid) REFERENCES merchantcategorygroup (id)
 );
 
+CREATE TABLE adminusers (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    passwordhash VARCHAR(60) NOT NULL,
+    role VARCHAR(20) NOT NULL
+);
+
 
 -- Insert initial data
 INSERT INTO company (name) VALUES ('TechCorp'), ('Healthify');
@@ -107,3 +114,4 @@ INSERT INTO companybenefit (companyid, merchantcategorygroupid)
 VALUES 
 (1, 1), -- TechCorp and Electronics
 (1, 2); -- TechCorp and Food & Beverages
+

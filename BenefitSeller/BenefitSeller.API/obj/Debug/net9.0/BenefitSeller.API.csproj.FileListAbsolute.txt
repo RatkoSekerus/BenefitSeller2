@@ -1,0 +1,8 @@
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.csproj.AssemblyReference.cache
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.AssemblyInfoInputs.cache
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.AssemblyInfo.cs
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.csproj.CoreCompileInputs.cache
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seker\IT\BenefitSeller2\BenefitSeller2\BenefitSeller\BenefitSeller.API\obj\Debug\net9.0\BenefitSeller.API.sourcelink.json

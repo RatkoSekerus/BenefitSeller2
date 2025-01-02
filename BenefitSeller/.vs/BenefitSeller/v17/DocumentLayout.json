@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\persistence\\database\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\persistence\\database\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\managers\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\managers\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\repositories\\transactionsrepositorydapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\repositories\\transactionsrepositorydapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\benefitseller.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\benefitseller.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\contracts\\managerinterfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\contracts\\managerinterfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\repositories\\dbconnectionwrappers\\dbconnectionwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\repositories\\dbconnectionwrappers\\dbconnectionwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|c:\\users\\seker\\it\\benefitseller2\\benefitseller2\\benefitseller\\benefitseller.api\\models\\viewmodels\\transactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C756E4-A919-4B32-AE41-188042299637}|BenefitSeller.API\\BenefitSeller.API.csproj|solutionrelative:benefitseller.api\\models\\viewmodels\\transactionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,77 +33,66 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 287,
-          "SelectedChildIndex": 3,
+          "DockedHeight": 231,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransactionsRepositoryDapper.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
-              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
-              "RelativeToolTip": "BenefitSeller.API\\Repositories\\TransactionsRepositoryDapper.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwD8AAAA9AAAA",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Managers\\AuthService.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Managers\\AuthService.cs",
+              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Managers\\AuthService.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Managers\\AuthService.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAwwDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T16:45:06.763Z",
+              "WhenOpened": "2025-01-02T13:57:17.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Program.cs",
               "RelativeDocumentMoniker": "BenefitSeller.API\\Program.cs",
               "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Program.cs",
               "RelativeToolTip": "BenefitSeller.API\\Program.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADkAAAAAAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T17:00:27.034Z",
+              "WhenOpened": "2025-01-01T15:51:13.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BenefitSeller.API.csproj",
-              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\BenefitSeller.API.csproj",
-              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\BenefitSeller.API.csproj",
-              "RelativeToolTip": "BenefitSeller.API\\BenefitSeller.API.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-17T16:49:02.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Persistence\\Database\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\Persistence\\Database\\DbInitializer.cs",
-              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Persistence\\Database\\DbInitializer.cs",
-              "RelativeToolTip": "BenefitSeller.API\\Persistence\\Database\\DbInitializer.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAoAAAAMAAAA",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wBwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:34:52.608Z",
+              "WhenOpened": "2025-01-01T13:24:44.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DbConnectionWrapper.cs",
-              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
-              "RelativeDocumentMoniker": "BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
-              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
-              "RelativeToolTip": "BenefitSeller.API\\Repositories\\DbConnectionWrappers\\DbConnectionWrapper.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBgAAAAsAAAA",
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Contracts\\ManagerInterfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Contracts\\ManagerInterfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Contracts\\ManagerInterfaces\\IAuthService.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Contracts\\ManagerInterfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T12:38:43.723Z"
+              "WhenOpened": "2025-01-01T13:22:05.741Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 31,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 87,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,11 +100,37 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Models\\ViewModels\\TransactionViewModel.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Models\\ViewModels\\TransactionViewModel.cs",
+              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Models\\ViewModels\\TransactionViewModel.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Models\\ViewModels\\TransactionViewModel.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T17:34:54.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\seker\\IT\\BenefitSeller2\\BenefitSeller2\\BenefitSeller\\BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "BenefitSeller.API\\Controllers\\TransactionsController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAUwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T16:43:49.114Z",
+              "EditorCaption": ""
             }
           ]
         }

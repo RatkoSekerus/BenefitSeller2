@@ -2,7 +2,7 @@
 using BenefitSeller.API.Contracts.ManagerInterfaces;
 using BenefitSeller.API.ManagerResults;
 using BenefitSeller.API.Models.ViewModels;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BenefitSeller.API.Controllers
@@ -10,6 +10,7 @@ namespace BenefitSeller.API.Controllers
     /// <summary>
     /// Controller responsible for handling transactions.
     /// </summary>
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TransactionsController : ControllerBase
@@ -52,6 +53,7 @@ namespace BenefitSeller.API.Controllers
         /// </summary>
         /// <param name="transaction">Transaction model</param>
         /// <returns>An HTTP response indicating the status of the transaction creation.</returns>
+        [Authorize(Policy = "Admin")]
         [HttpPost]
         [ValidateModel]
         public async Task<IActionResult> Create([FromBody] TransactionViewModel transaction)
